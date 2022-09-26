@@ -1,0 +1,10 @@
+paises = {}
+
+pais = ''
+while(pais != 'q'):
+    pais = input("Por favor agrega un país o presiona 'q' para terminar ")
+    if(pais != 'q'):
+        paises.add(pais)
+        
+pais_ordenados = paises.sort().join(', ')
+print(pais_ordenados)
